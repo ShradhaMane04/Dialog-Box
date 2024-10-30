@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog Box</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <div class="container">
+        <img src="clg.jpg" class="img-header" alt="Coding"/>
+        <div>
+            <h1 class="header-text">QUIZ COMPETITION</h1>
+            <img src="QR.jpg" class="img-qr" alt="QR Code"/>
+            <p class="qr-description">
+            Scan the QR code to know more.
+        </p>
+    </div>
+    </div>
+    <button type="button" class="btn" 
+    onclick="openModel()">
+    Enroll Now</button>
+    <div class="overlay" id="overlay">
+        <div class="model">
+            <img src="close1.png" class="close-icon" 
+            alt="Close"
+            onclick="closeModel()"/>
+            <form class="form">
+                <h1>Enroll Now</h1>
+                <input type="text" 
+                placeholder="Enter your name" 
+                class="form-input"/>
+                <input type="text" 
+                placeholder="Enter your phone number" 
+                class="form-input"/>
+                <input type="text" 
+                placeholder="Enter your college name" 
+                class="form-input"/>
+            </form>
+            <div>
+                <button type="button" class="btn">
+                    Proceed
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
